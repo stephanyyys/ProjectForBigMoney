@@ -1,0 +1,304 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold; 
+    text-align: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #c7885b;
+    border-radius: 15px;
+    grid-template-columns: repeat(auto-fill, 225px);
+    -webkit-text-stroke: 1px rgb(22, 16, 16);
+    text-shadow: 3px 1px 5px rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 220px; 
+    z-index: 10;
+    font-size: 100px;
+}
+
+header .item{
+    text-align: left;
+   
+    
+}
+header .item:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     border-radius: 15px;
+}
+header .booksstore{
+    text-align: center;
+}
+header .booksstore:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    
+}
+header .cart{
+    text-align: center;
+   
+    
+}
+header .cart:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+       border-radius: 15px;
+    
+}
+
+#shop-wrapper tr td#shop-menu {
+    width: 292px;
+    vertical-align: top;
+}
+
+#shop-wrapper tr td#shop-content {
+    width: 292;
+    vertical-align: top;
+}
+
+#adv {
+    background-image: url('https://clipart-library.com/images/6cr5qeBdi.jpg');
+    height: 190px;
+    width: 86%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 45px;
+    animation: slideBackground 10s linear infinite alternate;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right bottom;
+    }
+}
+
+.book {
+    background-image: url(d79e1770abbdc10387ad07b460c50b65.jpg);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px;
+    margin-inline-start: 20px;
+    background-color: #fff;
+
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    float: left;
+    max-width: max-content;
+}
+
+.book img {
+    border-radius: 15px;
+    width: 100%; 
+    max-width: 200px; 
+    margin-right: 10px;
+}
+
+.book a {
+    color: #ac764f; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-family: Arial, sans-serif; 
+    transition: color 0.3s;
+}
+
+.book a:hover {
+    color: #000000; 
+}
+
+.buy-link {
+    color: #ff0000;                                
+    background-color: #e1ee69c0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.book a::after {
+    content: '\2192'; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.book a:hover::after {
+    opacity: 1;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.buy-link:hover {
+    background-color: #e4f742; 
+    color: #ffffff; 
+}
+
+#menu-block {
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu-block label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#menu-block select, #menu-block input[type="checkbox"], #menu-block input[type="radio"], #menu-block input[list] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+#menu-block input[type="checkbox"], #menu-block input[type="radio"] {
+    width: auto;
+}
+
+.ad-container {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ad-block {
+    
+    width: calc(100% - 10px);
+    height: 400px;
+    
+    background-color: #9b9b9bc2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+
+@media screen and (max-width: 440px) {
+    header{
+        flex-direction: column;
+    }
+    header .item{
+    
+    
+        
+    }
+    header .booksstore{
+    
+    }
+    
+    header .cart{
+        
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+        grid-template-columns: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: auto;
+    }
+}
